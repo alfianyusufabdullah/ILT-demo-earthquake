@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earthquake Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <main class="container mx-auto px-20 py-7">
+      <h1 class="text-6xl font-bold text-center">Earthquake Indonesia</h1>
+      <h1 class="text-xl text-center mt-2">
+        Daftar gempa bumi di kawasan indonesia yang terdeteksi dapat dirasakan
+      </h1>
+      <div class="flex items-center mb-4">
+        <input
+          id="is-danger-checkbox"
+          type="checkbox"
+          class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+        />
+        <label for="default-checkbox" class="ms-2 font-medium"
+          >Danger Earthquake</label
+        >
+      </div>
+      <div id="earthquake-container" class="flex flex-wrap mt-12"></div>
+    </main>
+  </body>
+</html>
